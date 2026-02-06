@@ -1,7 +1,7 @@
 <resources>
     //Name: Van Linh Pham
     // Student ID: N01681546
-    <string name="app_name">Simple Views 1</string>
+    <string name="app_name">SuperUltraProMaxMagnificent</string>
     <string name="hello">Hello World, SimpleViews1Activity!</string>
     <string name="save">Save</string>
     <string name="savbtn">You have clicked the Save button1</string>
@@ -18,4 +18,17 @@
     <string name="op2xml">Option 2</string>
     <string name="messagealeart">Do you wanna exit da app?</string>
     <string name="tstname">"Van Linh Pham: "</string>
+    <string name="Y">Yes</string>
+    <string name="N">No</string>
+    <string name="swoff">Switch is ON</string>
+    <string name="swofff">Switch is OFF</string>
+    <string name="thelink">https://www.youtube.com/watch?v=ReXHwSS0r5U</string>
+    <string name="kirk">We are Charlie Kirk</string>
+    <string name="predator">Mr.Jeffrey</string>
+    <string name="ow">Meowl</string>
+    <string name="tzu">sunTzu</string>
+    <string name="log1">Activity101</string>
+    <string name="logstuff">Linh Pham Van - Student ID: N01681546</string>
+    <string name="dashi">Switch da stuf!</string>
+    <string name="text">Enter da text (letter only, maximum 10)</string>
 </resources>

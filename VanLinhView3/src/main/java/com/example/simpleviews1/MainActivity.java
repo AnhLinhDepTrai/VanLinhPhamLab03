@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("Activity101", "Linh Pham Van - Student ID: N01681546");
+        Log.d(getString(R.string.log1), getString(R.string.logstuff));
     }
 
     private int[] images = {
@@ -36,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.img4
     };
 
-    private String[] imageNames = {
-            "Mr.Jeffrey", "We are Charlie Kirk", "Meowl", "sunTzu"
-    };
+    private String[] imageNames;
+
 
     private int currentImageIndex = 0;
 
@@ -52,17 +51,23 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        imageNames = new String[] {
+                getString(R.string.predator),
+                getString(R.string.kirk),
+                getString(R.string.ow),
+                getString(R.string.tzu)
+        };
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                // show your AlertDialog here
+
                 new AlertDialog.Builder(MainActivity.this)
-                       .setIcon(R.drawable.mrun) // custom icon
-                        .setTitle(R.string.app_name)       // your project name
+                        .setIcon(R.drawable.mrun)
+                        .setTitle(R.string.app_name)
                         .setMessage(R.string.messagealeart)
-                        .setCancelable(false)           // must choose Yes or No
-                        .setPositiveButton("Yes", (dialog, which) -> finish())
-                        .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
+                        .setCancelable(false)
+                        .setPositiveButton(R.string.Y, (dialog, which) -> finish())
+                        .setNegativeButton(R.string.N, (dialog, which) -> dialog.dismiss())
                         .show();
             }
         });
@@ -73,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String message;
                 if (isChecked) {
-                    message = "Switch is ON";
+                    message = getString(R.string.swoff);
                 } else {
-                    message = "Switch is OFF";
+                    message = getString(R.string.swofff);
                 }
 
                 // Display Snackbar
@@ -110,28 +115,28 @@ public class MainActivity extends AppCompatActivity {
         btnOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Launch device settings
+
                 Intent intent = new Intent(android.provider.Settings.ACTION_SETTINGS);
                 startActivity(intent);
 
-                // Remove the toast, so nothing else happens
+
             }
         });
 
 
 
-		Button btnSave = (Button) findViewById(R.id.btnSave);
-		btnSave.setOnClickListener(new View.OnClickListener()
-		{
+        Button btnSave = (Button) findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 // Intent to open a website
-                String url = "https://www.youtube.com/watch?v=ReXHwSS0r5U"; // put your website here
+                String url = getString(R.string.thelink);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
                 startActivity(intent);
             }
-		});
+        });
 
 
         //---CheckBox---

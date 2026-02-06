@@ -16,4 +16,20 @@
     <string name="atsavxml">Sauvegarde automatique</string>
     <string name="op1xml">Option 1</string>
     <string name="op2xml">Option 2</string>
+    <string name="messagealeart">Veux-tu quitter lapplication ?</string>
+    <string name="tstname">"Van Linh Pham : "</string>
+    <string name="Y">Oui</string>
+    <string name="N">Non</string>
+    <string name="swoff">Le bouton est ACTIVÉ</string>
+    <string name="swofff">Le bouton est DÉSACTIVÉ</string>
+    <string name="thelink">https://www.youtube.com/watch?v=ReXHwSS0r5U</string>
+    <string name="kirk">Nous sommes Charlie Kirk</string>
+    <string name="predator">M. Jeffrey</string>
+    <string name="ow">Meowl</string>
+    <string name="tzu">Sun Tzu</string>
+    <string name="log1">Activity101</string>
+    <string name="logstuff">Linh Pham Van - ID étudiant : N01681546</string>
+    <string name="dashi">Active le bouton !</string>
+    <string name="text">Saisis le texte (lettres uniquement, maximum 10)</string>
+
 </resources>
