@@ -1,5 +1,6 @@
 package com.example.simpleviews1;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,8 +11,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+import androidx.appcompat.app.AlertDialog;
+import android.content.DialogInterface;
 
 public class MainActivity extends AppCompatActivity {
+
 
     public void btnSaved_clicked (View view) {
         DisplayToast(getString(R.string.savbtn));
@@ -22,6 +26,20 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                // show your AlertDialog here
+                new AlertDialog.Builder(MainActivity.this)
+                       .setIcon(R.drawable.mrun) // custom icon
+                        .setTitle(R.string.app_name)       // your project name
+                        .setMessage(R.string.messagealeart)
+                        .setCancelable(false)           // must choose Yes or No
+                        .setPositiveButton("Yes", (dialog, which) -> finish())
+                        .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
+                        .show();
+            }
+        });
 
 
         //---Button view---

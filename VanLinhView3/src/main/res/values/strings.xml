@@ -1,4 +1,6 @@
 <resources>
+    //Name: Van Linh Pham
+    // Student ID: N01681546
     <string name="app_name">Simple Views 1</string>
     <string name="hello">Hello World, SimpleViews1Activity!</string>
     <string name="save">Save</string>
@@ -14,4 +16,5 @@
     <string name="atsavxml">Autosave</string>
     <string name="op1xml">Option 1</string>
     <string name="op2xml">Option 2</string>
+    <string name="messagealeart">Do you wanna exit da app?</string>
 </resources>

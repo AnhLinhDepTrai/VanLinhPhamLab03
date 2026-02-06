@@ -2,19 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:paddingTop="50dp">
 
-    <Button android:id="@+id/btnSave"
+
+    <Button
+        android:id="@+id/btnSave"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:onClick="btnSaved_clicked"/>
+        android:onClick="btnSaved_clicked"
+        android:text="@string/save" />
 
-    <Button android:id="@+id/btnOpen"
+    <Button
+        android:id="@+id/btnOpen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/opxml" />
-
 
     <ImageButton android:id="@+id/btnImg1"
         android:layout_width="fill_parent"
@@ -43,13 +46,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/op1xml" />
-        <RadioButton android:id="@+id/rdb2"
+
+        <RadioButton
+            android:id="@+id/rdb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/op2xml" />
+
     </RadioGroup>
 
-    <ToggleButton android:id="@+id/toggle1"
+    <ToggleButton
+        android:id="@+id/toggle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
