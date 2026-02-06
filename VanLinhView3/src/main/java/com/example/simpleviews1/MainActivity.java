@@ -9,13 +9,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import androidx.appcompat.app.AlertDialog;
 import android.content.DialogInterface;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,6 +56,23 @@ public class MainActivity extends AppCompatActivity {
                         .setCancelable(false)           // must choose Yes or No
                         .setPositiveButton("Yes", (dialog, which) -> finish())
                         .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
+                        .show();
+            }
+        });
+        Switch switch1 = findViewById(R.id.switch1);
+
+        switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                String message;
+                if (isChecked) {
+                    message = "Switch is ON";
+                } else {
+                    message = "Switch is OFF";
+                }
+
+                // Display Snackbar
+                Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_LONG)
                         .show();
             }
         });

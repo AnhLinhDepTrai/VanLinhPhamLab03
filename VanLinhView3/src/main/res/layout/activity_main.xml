@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:paddingTop="50dp">
+    android:paddingTop="50dp"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
 
 
     <Button
@@ -23,6 +25,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="Switch da shi!" />
 
     <EditText android:id="@+id/txtName"
         android:layout_width="fill_parent"

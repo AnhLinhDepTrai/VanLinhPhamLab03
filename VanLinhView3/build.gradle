@@ -25,6 +25,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.material:material:1.11.0'
 
     // Old/unsupported libs commented out
     // implementation libs.appcompat.v110
@@ -34,4 +35,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'          // replace libs.junit.v412
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'  // replace libs.junit.v111
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0' // replace libs.espresso.core.v320
+
+
 }
