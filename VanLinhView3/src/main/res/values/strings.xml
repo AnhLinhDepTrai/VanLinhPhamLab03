@@ -2,4 +2,16 @@
     <string name="app_name">Simple Views 1</string>
     <string name="hello">Hello World, SimpleViews1Activity!</string>
     <string name="save">Save</string>
+    <string name="savbtn">You have clicked the Save button1</string>
+    <string name="opbtn">You have clicked the Open button</string>
+    <string name="cheked">CheckBox is checked</string>
+    <string name="ucheked">CheckBox is unchecked</string>
+    <string name="op1">Option 1 checked!</string>
+    <string name="op2">Option 2 checked!</string>
+    <string name="ontg">Toggle button is On</string>
+    <string name="offtg">Toggle button is Off</string>
+    <string name="opxml">Open</string>
+    <string name="atsavxml">Autosave</string>
+    <string name="op1xml">Option 1</string>
+    <string name="op2xml">Option 2</string>
 </resources>

@@ -13,7 +13,8 @@
     <Button android:id="@+id/btnOpen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open" />
+        android:text="@string/opxml" />
+
 
     <ImageButton android:id="@+id/btnImg1"
         android:layout_width="fill_parent"
@@ -27,7 +28,7 @@
     <CheckBox android:id="@+id/chkAutosave"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Autosave" />
+        android:text="@string/atsavxml" />
 
     <CheckBox android:id="@+id/star"
         style="?android:attr/starStyle"
@@ -41,11 +42,11 @@
         <RadioButton android:id="@+id/rdb1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 1" />
+            android:text="@string/op1xml" />
         <RadioButton android:id="@+id/rdb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 2" />
+            android:text="@string/op2xml" />
     </RadioGroup>
 
     <ToggleButton android:id="@+id/toggle1"

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Vues simples 1</string>
+    <string name="hello">Bonjour le monde, SimpleViews1Activity !</string>
+    <string name="save">sauvegarder</string>
+    <string name="savbtn">Vous avez clique sur le bouton Enregistrer1</string>
+    <string name="opbtn">Vous avez clique sur le bouton Ouvrir</string>
+    <string name="cheked">La case a cocher est cochee.</string>
+    <string name="ucheked">La case à cocher nest pas cochée.</string>
+    <string name="op1">Option 1 cochée !</string>
+    <string name="op2">Option 2 cochée !</string>
+    <string name="ontg">Le bouton bascule est activé.</string>
+    <string name="offtg">Le bouton bascule est désactivé.</string>
+    <string name="opxml">Ouvrir</string>
+    <string name="atsavxml">Sauvegarde automatique</string>
+    <string name="op1xml">Option 1</string>
+    <string name="op2xml">Option 2</string>
+</resources>
