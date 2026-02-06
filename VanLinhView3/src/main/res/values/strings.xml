@@ -17,4 +17,5 @@
     <string name="op1xml">Option 1</string>
     <string name="op2xml">Option 2</string>
     <string name="messagealeart">Do you wanna exit da app?</string>
+    <string name="tstname">"Van Linh Pham: "</string>
 </resources>

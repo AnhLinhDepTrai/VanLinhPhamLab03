@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -16,6 +17,19 @@ import androidx.appcompat.app.AlertDialog;
 import android.content.DialogInterface;
 
 public class MainActivity extends AppCompatActivity {
+
+    private int[] images = {
+            R.drawable.img1,
+            R.drawable.img2,
+            R.drawable.img3,
+            R.drawable.img4
+    };
+
+    private String[] imageNames = {
+            "Mr.Jeffrey", "We are Charlie Kirk", "Meowl", "sunTzu"
+    };
+
+    private int currentImageIndex = 0;
 
 
     public void btnSaved_clicked (View view) {
@@ -39,6 +53,26 @@ public class MainActivity extends AppCompatActivity {
                         .setPositiveButton("Yes", (dialog, which) -> finish())
                         .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
                         .show();
+            }
+        });
+
+        ImageButton imgButton = findViewById(R.id.btnImg1);
+
+        imgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                imgButton.setImageResource(images[currentImageIndex]);
+
+
+
+
+
+                Toast.makeText(MainActivity.this,
+                        getString(R.string.tstname) + imageNames[currentImageIndex],
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
